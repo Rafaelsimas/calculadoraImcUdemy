@@ -8,53 +8,86 @@ body{
     font-family: sans-serif;
 }
 
-
-.container, .formulario{
-    margin-top: 80px;
-    width: 80%;
-    max-width: 600px;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.topo{
+    width: 100%;
+    height: 230px;
+    background: purple;
 }
 
+.container{
+    margin-top: -130px;
+    width: 90%;
+    max-width: 800px;
+    background: #dfd9d9;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
 
-input{
+.container img{
+    width: 250px;
+}
+
+.subtitulo{
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.formulario{
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formulario input, button, .resultado, .paragrafo-resultado, .bad{
+    padding: 18px 20px;
     width: 100%;
-    padding: 10px 20px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+.formulario input{
+    border: 1px solid rgba(204, 110, 228, 0.253);
+}
+
+.resultado{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+}
+
+.formulario input::placeholder{
+    font-weight: bold;
 }
 
 button{
-    width: 100%;
-    padding: 10px 20px;
     background: purple;
     color: white;
     border: none;
-    margin-bottom: 30px;
 }
 
-
-
-.resultado, .paragrafo-resultado, .bad{
+.paragrafo-resultado {
+    background: green;
     width: 100%;
-    height: 50px;
     color: white;
-    border: none;
-    display: flex;
-    justify-content: flex;
-
-    align-items: center;
+    font-size: 12px;
 }
-
-.paragrafo-resultado{
-    background: rgb(92, 199, 92);
-    width: 100%;
-}
-
 .bad{
-    background: rgb(224, 102, 102);
     width: 100%;
+    background: #f09191;
+    
 }
